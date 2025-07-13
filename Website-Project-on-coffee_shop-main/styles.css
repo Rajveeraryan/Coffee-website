@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background: #6f4c3e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('coffee-back-1.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    
+    text-align: center;
+    opacity: 0.8;
+}
+#hero h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 50px;
+    border-bottom: 3px solid white;
+    color: black;
+}
+
+.you{
+    margin-top: 50px;
+    color:azure;
+    font-size: 30px;
+    color: black;
+}
+.quote{
+    align-items: center;
+    text-align: center;
+    padding: 10px 400px;
+    font-style: italic;
+    color: whitesmoke;
+    color: black;
+
+}
+
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 500px;
+    background: url(coffee-about.jpeg) no-repeat center center/cover;
+    font-weight: 900;
+}
+#about h1{
+    color: #fff;
+
+}
+#about p{
+    padding: 0 100px;
+}
+.story{
+    text-align: left;
+    padding-left: 100px;
+}
+
+footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.shop-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+.shop-item h3 {
+    margin: 10px 0;
+}
+
+.shop-item button {
+    background-color: #6f4c3e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop-item button:hover {
+    background-color: #8f5c4b;
+}
+/* Coffee Gallery Section */
+.coffee-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coffee-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coffee-card img {
+    width: 100%;
+    height: 400px;
+}
+
+.coffee-card h2 {
+    font-size: 1.8rem;
+    margin: 15px;
+    color: #6f4c3e;
+}
+
+.coffee-card p {
+    font-size: 1rem;
+    padding: 0 15px 15px;
+    color: #333;
+}
+
+/* Hover effect for coffee cards */
+.coffee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex: 0 1 calc(45% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card img {
+    width: 500px;
+     margin: auto; 
+     height: auto; 
+    /* padding: 30% 0; */
+    /* align-self: center; */
+    /* align-items: center; */
+    object-fit: cover;
+    /* margin-left: 30%; */
+    /* margin-right: 30%; */
+}
+
+.recipe-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-content h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #d08261;
+}
+
+.recipe-content p {
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Hover effect for recipe cards */
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
